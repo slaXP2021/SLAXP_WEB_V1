@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Cadraste-se como aluno</title>
+   <!-- link Css -->
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+  <!-- Link Bootstrap -->
+   	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- Link do google fonts Varela Round-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <!-- icone de favorito -->
+    <link rel="shortcut icon" type="image/x-icon" href="imagem/favicon-32x32.ico">
+  </head>
+
+	<!-- bg-light   borda branca em volta do top menu -->
+  	<nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><h2 class="titulologo">SLAXP</h2></a>
+     
+        <div>     
+          <form class="d-flex">
+             <a href="emBreveSLA.html"><h4 class="topMenu">Menu</h4></a>
+          </form>
+      </div>
+    </nav>
+    <body class="bodyPrincipal">
+      <div class="container CadAluno">
+          <div class="row">
+            <div class="col-12" style="text-align:center;">
+                <h2 class="tituloCadAluno">Cadastro do Aluno</h2>
+            </div>
+          </div>
+          <!--------------------------->
+          <div id="espacoCad" class="">
+          <div class="row " style="text-align:center;margin-top:20px">
+                  <div class="col-4"></div>
+              <div class="col-3 linhaCadAluno">
+                 <input class="form-control-lg inputCad1" type="text" placeholder="Nome">
+              </div>
+                 <div class="col-4"></div>
+          </div>
+          <br>
+          <!--------------------------->
+           <div class="row" style="text-align:center;">
+                  <div class="col-4"></div>
+              <div class="col-3 linhaCadAluno">
+                 <input class="form-control-lg inputCad1" type="text" placeholder="RM">
+              </div>
+                 <div class="col-4"></div>
+          </div>
+          <br>
+          <!--------------------------->
+           <div class="row" style="text-align:center;">
+              <div class="col-4"></div>
+              <div class="col-3 linhaCadAluno">
+                 <input class="form-control-lg inputCad1" type="text" placeholder="Número">
+              </div>
+              <div class="col-4"></div>
+          </div>
+          <br>  
+          <!--------------------------->
+           <div class="row" style="text-align:center;">
+              <div class="col-4"></div>
+              <div class="col-3 linhaCadAluno2">
+                 <input class="form-control-lg inputCad2" type="text" placeholder="Turma">
+              </div>
+              <div class="col-4 linhaCadAluno3">
+                 <input class="form-control-lg inputCad3" type="text" placeholder="Grupo">
+              </div>
+          </div>
+          <br>
+          <div class="row" style="text-align:center;">
+              <div class="col-6"></div>
+           
+              <div class="col-4" >
+                <!-- <a href="emBreveSLA.html"> --><button type="button" class="btn btn-lg btn-danger btn-position" onclick="chamaProxCad()">Proximo <i class="bi bi-arrow-right-circle"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg></i></button><!-- </a> -->
+                   
+              </div>
+          </div>
+        </div>    <!-- -->
+      </div> 
+    </body>
+</html>
+
+
+<script>
+  
+  function chamaProxCad(){
+     alert ('aiiiiii')
+    //  let ProximoCad = 1; 
+
+
+      $.ajax({
+      type: "POST",
+        url: "ProximoCad.html",
+     
+      success: function(html){
+          $("#resultarea").html(response);
+     }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+</script>
