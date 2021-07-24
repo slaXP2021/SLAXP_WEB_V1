@@ -8,7 +8,8 @@
   <link rel="stylesheet" type="text/css" href="estilo.css"/>
 <!-- Link Bootstrap -->
  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+<!-- icone de favorito -->
+  <link rel="shortcut icon" type="image/x-icon" href="imagem/favicon-32x32.ico">
 
 <!-- Link do google fonts Varela Round-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,26 +23,60 @@
 	<nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><h2 class="titulologo">SLAXP</h2></a>
-   
       <div>     
         <form class="d-flex">
            <a href="emBreveSLA.html"><h4 class="topMenu">Menu</h4></a>
+           <a href="emBreveSLA.html">
+            <div>
+               <i class="bi bi-list"></i><svg xmlns="http://www.w3.org/2000/svg" color="white" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg></div></a>
         </form>
-      
-    </div>
+      </div>
   </nav>
     <div class="container pgPadrao">
-      <h2 class="subtitulo">BEM VINDO A</h2>
-      <h1 class="subtitulo2">Semana da <br> Liberdade e Alteridade</h1>
-      <a href="cadastrar.html"><button class="buttonHome" type="button" class="btn btn-outline-primary">Cadastrar</button></a>
-      <a href="sobreSLAXP.html"><button class="buttonHome" type="button" class="btn btn-outline-primary" >Sobre a SLA</button></a>
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="subtitulo">BEM VINDO A</h2>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-11">
+              <h1 class="subtitulo2">Semana da <br> Liberdade e Alteridade</h1>
+            </div>
+            <div class="col-sm-1 redes">
+              <div class="row">
+              
+                <div class="col-sm-1">
+                    <div class="redeSociais">
+                         <a href="emBreveSLA.html"><i class="bi bi-wallet-fill"></i><svg xmlns="http://www.w3.org/2000/svg" class="iconeRedes" color="white" width="18" height="18" fill="currentColor" class="bi bi-wallet-fill" viewBox="0 0 16 16">
+                          <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542.637 0 .987-.254 1.194-.542.226-.314.306-.705.306-.958a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                          <path d="M16 6.5h-5.551a2.678 2.678 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5c-.963 0-1.613-.412-2.006-.958A2.679 2.679 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6z"/>
+                          </svg> </a> 
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-1">
+                    <div class="redeSociais">
+                        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i><svg xmlns="http://www.w3.org/2000/svg" class="iconeRedes"  color="white" width="18" height="18" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a> 
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-1">
+                     <div class="redeSociais">
+                        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i><svg xmlns="http://www.w3.org/2000/svg"class="iconeRedes"  color="white" width="18" height="18" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg></a> 
+                     </div>
+                </div>
+              </div>
+            </div>
+        </div>        
+        <br>
+        <br>
+          <a href="cadastrar.html"><button class="buttonHome" type="button" class="btn btn-outline-primary">Cadastrar</button></a>
+          <a href="sobreSLAXP.html"><button class="buttonHome" type="button" class="btn btn-outline-primary" >Sobre a SLA</button></a>
     </div>
 
-
-     
-
-
-	
-
-</body>
+  </body>
 </html>
