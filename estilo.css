@@ -1,3 +1,5 @@
+/*icones  https://icons.getbootstrap.com/icons/tools/ */
+
 :root{
 	/*Roxo*/  --CorTema : #320133;
 	/*branco*/--Branco:#ffffff;
@@ -5,9 +7,17 @@
 	/*Fonte PG-BotaoHome*/--Fonte-BotaoHome: 'Varela Round', sans-serif;
 	/*Fonte PG-subsobre*/--Fonte-Sobre: 'Big Shoulders Display', cursive;;
 	/*Fonte PG-paradescri*/--Fonte-descri:'Khula', sans-serif;
-	/*Fonte PG-EmBrevePage*/--fonte-EmBreve: 'Fugaz One', cursive;
+	/*Fonte PG-EmBrevePg*/--fonte-EmBreve: 'Fugaz One', cursive;
 	}
-
+/*-----------------------------------*/
+/*NO GERAL*/
+a:link {
+  	text-decoration:none;
+}
+p{
+ 	font-family: var(--Fonte-BotaoHome);
+ 	font-size: 24px
+}
 .topMenu {
 	margin-right:10%;
 	margin-top:5%;
@@ -15,10 +25,9 @@
 	color: var(--Branco);
 }
 .titulologo{
-color: var(--Branco);	
+	color: var(--Branco);	
 }
 .d-flex{
-	/*padding-right:15%;*/
 	margin-right: 40%;
 }
 .bodyPrincipal{
@@ -28,20 +37,15 @@ color: var(--Branco);
 .container-fluid{
 	background-color:var(--CorTema);
 }
-.subtitulo{
-	/*font-family: var(--Fonte-basica);*/
-	color: var(--CorLetRoxo);
-	
-}
-.container{
-	
-}
 .pgPadrao{
-	margin-top:12%;	
+	margin-top:10%;	
 }
-
+/*-----------------------------------*/
+/*PAGINA iNDEX*/
+.subtitulo{
+	color: var(--CorLetRoxo);	
+}
 .subtitulo2{
-	/*font-family: var(--Fonte-basica);*/
    color:var(--Branco);
    font-size:70px;
 }
@@ -54,34 +58,62 @@ color: var(--Branco);
 	height: 40px;
 	font-size:18px
 }
-
 .buttonHome:hover{
-	 font-family: var(--Fonte-BotaoHome);
-     background: var(--Branco);
-     color: var(--CorTema);
-
+	font-family: var(--Fonte-BotaoHome);
+    background: var(--Branco);
+    color: var(--CorTema);
 }
-
-p{
- font-family: var(--Fonte-BotaoHome);
- font-size: 24px
+.redeSociais{
+	height:35px;
+	width:35px;
+	border-radius:15px;
+	background-color:var(--CorTema);
+	margin-top:10px;
+	margin-left:115px;
+	border-color:white;
+	border-style: solid;
+	border-width: 1px;
 }
-
+.redeSociais:hover{
+	background-color: var(--Branco);
+}
+.redeSociais2{
+	height:35px;
+	width:35px;
+	border-radius:15px;
+	background-color:var(--CorTema);
+	margin-top:10px;
+	margin-left:100px;
+	border-color:white;
+	border-style: solid;
+	border-width: 1px;
+}
+.redes{
+	padding-top:38px;
+}
+.iconeRedes{
+	margin-top:5px;
+	margin-left:8px;
+	text-decoration:none;
+}
+.iconeRedes:hover{
+	color:var(--CorTema);
+}
+/*-----------------------------------*/
+/*PAGINA SOBRE*/
 .subsobre{
-	 font-family: var(--Fonte-Sobre);
-     color: var(--CorLetRoxo);
-
+	font-family: var(--Fonte-Sobre);
+    color: var(--CorLetRoxo);
 }
 .paradescri {
-	 font-family: var(--Fonte-descri);
-     color: var(--Branco);
-
+	font-family: var(--Fonte-descri);
+    color: var(--Branco);
 }
+/*-----------------------------------*/
 /*PAGINA CADASTRO*/
 .pgCAD{
 	margin-top:3%;	
 }
-
 .imgestudante{
 	margin-left:30px
 }
@@ -90,15 +122,58 @@ p{
 	margin-left: 18px;
 	color:var(--Branco);
 }
-
+.iconeCAD{
+	height:35px;
+	width:35px;
+	border-radius:15px;
+	background-color:var(--CorTema);
+	margin-top:10px;
+	margin-left:115px;
+	border-color:white;
+	border-style: solid;
+	border-width: 1px;
+}
+/*-----------------------------------*/
+/*Cadastro Aluno */
+.CadAluno{
+	margin-top:5%;
+	background-image:url("imagem/logo-estudante.jpg");
+	background-repeat: no-repeat, repeat;
+	background-position: center;
+}
+.tituloCadAluno{
+	font-size: 40px;
+    font-family:var(--Fonte-Sobre);
+}
+.inputCad1{
+	opacity:0.7;
+	width:400px;
+}
+.inputCad2{
+	opacity:0.7;
+	width:200px;
+}
+.inputCad3{
+	opacity:0.7;
+	width:170px;
+}
+.linhaCadAluno{
+	margin-left: -30px;
+}
+.linhaCadAluno2{
+	margin-left: -60px;
+}
+.linhaCadAluno3{
+	margin-left: -120px;
+}
+.btn-position{
+	margin-left: -145px;
+}
+/*-----------------------------------*/
 /*Em breve page */
-
 .bodyPrincipalEmAndamento{
 	color:var(--Branco);
 	background-color:var(--CorTema);
-
-/*	background-image:url(emAndamento.jpg);
-	background-repeat: no-repeat;*/
 }
 .subtitulo3{
 	color:var(--Branco);
@@ -106,13 +181,8 @@ p{
     font-family:var(--fonte-EmBreve);
 }
 .pgEmBreve{
-	margin-top:12%;	
-	
+	margin-top:12%;		
 }
 .EmBrevinho{
 	margin-left:31%;	
-}
-a:link {
- 
-  text-decoration:none;
 }
