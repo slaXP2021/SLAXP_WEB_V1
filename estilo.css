@@ -1,4 +1,4 @@
-/*icones  https://icons.getbootstrap.com/icons/tools/ */
+/*icones  https://icons.getbootstrap.com/icons/tools/    */
 
 :root{
 	/*Roxo*/  --CorTema : #320133;
@@ -166,8 +166,78 @@ p{
 .linhaCadAluno3{
 	margin-left: -120px;
 }
+.btn-position-Aluno{
+	margin-left: -145px;
+}
+.btn-position-return-Aluno{
+	margin-left: 110px;
+}
+/*-----------------------------------*/
+/*Cadastro Prof */
+.CadProf{
+	margin-top:5%;
+	background-image:url("imagem/logo-Professor.jpg");
+	background-repeat: no-repeat, repeat;
+	background-position: center;
+}
+.tituloCadProf{
+	font-size: 40px;
+    font-family:var(--Fonte-Sobre);
+}
+.inputCad1{
+	opacity:0.7;
+	width:400px;
+}
+.inputCad2{
+	opacity:0.7;
+	width:200px;
+}
+.inputCad3{
+	opacity:0.7;
+	width:170px;
+}
+.linhaCadProf{
+	margin-left: -30px;
+}
+.linhaCadProf2{
+	margin-left: -60px;
+}
+.linhaCadProf3{
+	margin-left: -120px;
+}
 .btn-position{
 	margin-left: -145px;
+}
+/*-----------------------------------*/
+/*Pagina do Login */
+.subtituloLogin{
+	color:var(--Branco);
+	font-size:55px;
+	text-align: center;
+}
+.pgLOG{
+		margin-top:3%;	
+}
+.linhaIMG{
+	margin-top:50px
+}
+.imgProf{
+	margin-left: 380px;
+}
+.imgAluno{
+	margin-left:25px
+}
+.txtProfLOG{
+	margin-top: 28px;
+	margin-left: 380px;
+	color:var(--Branco);
+	
+}
+.txtAlunoLOG{
+	margin-top: 28px;
+	margin-left:50px;
+	color:var(--Branco);
+	
 }
 /*-----------------------------------*/
 /*Em breve page */
@@ -185,4 +255,8 @@ p{
 }
 .EmBrevinho{
 	margin-left:31%;	
+}
+.btn-position-retuurn-log{
+	margin-top: 70px;
+	margin-left: 200px;
 }
