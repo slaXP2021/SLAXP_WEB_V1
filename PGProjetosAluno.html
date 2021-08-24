@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Cadrastre</title>
+  <title>Cadrastre</title>
 
-
+<!-- link  para o script JS -->
+  <script type="text/javascript" src="Scripst.js"></script>
 <!-- link Css -->
   <link rel="stylesheet" type="text/css" href="estilo.css"/>
-
 <!-- Link Bootstrap -->
- 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <!-- Link do google fonts Varela Round-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,10 +17,16 @@
   <link rel="shortcut icon" type="image/x-icon" href="imagem/favicon-32x32.ico">
 
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+
 </head>
       <body class="bodyPrincipal">
-      	<!-- bg-light   borda branca em volta do top menu -->
-        	<nav class="navbar navbar-expand-lg navbar-light ">
+        <!-- bg-light   borda branca em volta do top menu -->
+          <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html"><h2 class="titulologo">SLAXP</h2></a>
            
@@ -55,7 +59,7 @@
               </div>
               <div class="row">
                   <div class="flex-container">
-                      <div class="AddProj" onClick="AbreModal()">
+                      <div class="AddProj"  data-bs-toggle="modal" data-bs-target="#CadrastraProj">
                           <i class="bi bi-plus-lg"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"><path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"/></svg></i>
                       </div>
                       <div class="ProjCriado" onClick="AbreProjCriado()">
@@ -65,17 +69,94 @@
               </div>
             </div>
 
-    </body>
+
+<!-- Modal -->
+<div class="modal fade" id="CadrastraProj" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable" >
+    <div class="modal-content" style="border-color: #8f98a5;border-width: 10px;background-color:#efeaee">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color:#be5472">CRIE SEU PROJETO</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color:black">
+          <div class="container">
+             <div class="row " style="text-align:center">
+                    <div class="col-12">
+                       <input class="form-control-lg inputCadProj" id="NomeProjeto" name="NomeAluno" type="text" placeholder="Nome do Projeto">
+                    </div>
+             </div>
+              <div class="row " style="text-align:center">
+                    <div class="col-12">
+                       <input class="form-control-lg inputCadProj" id="NomeAluno" name="NomeAluno" type="text" placeholder="Nome">
+                    </div>
+                      
+                </div>
+              <div class="row " style="text-align:center;margin-left:12px">
+                    <div class="col-2">
+                       Tema
+                    </div>
+                    <div class="col-4">
+                       <select class="form-select inputSelect" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Selecione</option>
+                              <option value="Racismo">Racismo</option>
+                              <option value="Homofobia">Homofobia</option>
+                              <option value="Indigenas">Indigenas</option>
+                            </select>
+                    </div>   
+                      
+                </div>
+              <div class="row " style="text-align:center;margin-left:12px">
+                    <div class="col-2">
+                       Tipo
+                    </div>
+                    <div class="col-4">
+                       <select class="form-select inputSelect" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Selecione</option>
+                              <option value="Apresentacao">Apresentação</option>
+                              <option value="exposicao">exposição</option>
+                            </select>
+                    </div>    
+              </div>
+              <div class="row " style="text-align:center">
+                    <div class="col-12">
+                       <input class="form-control-lg inputCadProj" id="NomeAluno" name="NomeAluno" type="text" placeholder="Local">
+                    </div>
+              </div>
+              <div class="row " style="text-align:center;margin-top:5px">
+                    <div class="col-12">
+                      <textarea cols="30" rows="5" class="form-control inputText" id="inputTextArea" placeholder="Descreva seu projeto" ></textarea>
+                    </div>
+                      
+                </div>
+             </div>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color:#be5472;background-color: #d0d1d6;border:none" onclick="ValidaProj()">Enviar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+      </body>
 </html>
 
 
+  <!-- onClick="AbreModal()" -->
+
 
 <script>
-  function AbreModal(){
-    alert('Vou abrir nao amigo, é nois TMJ')
-  }
+  // function AbreModal(){
+  //   alert('Vou abrir nao amigo, é nois TMJ')
+  // }
    function AbreProjCriado(){
     alert('Não tem nada aqui nao parça')
   }
-
 </script>
+
+
+
+<!-- Vertically centered scrollable modal -->

@@ -1,4 +1,4 @@
- // Validaçao para cadastrar aluno pg1
+// Validaçao para cadastrar aluno pg1
  function ValidaProxPg(){
     
     var NomeAluno = document.getElementById('NomeAluno').value;
