@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Cadrastre</title>
+
+
+<!-- link Css -->
+  <link rel="stylesheet" type="text/css" href="estilo.css"/>
+
+<!-- Link Bootstrap -->
+ 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+<!-- Link do google fonts Varela Round-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<!-- icone de favorito -->
+  <link rel="shortcut icon" type="image/x-icon" href="imagem/favicon-32x32.ico">
+
+
+</head>
+      <body class="bodyPrincipal">
+      	<!-- bg-light   borda branca em volta do top menu -->
+        	<nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><h2 class="titulologo">SLAXP</h2></a>
+           
+              <div>     
+                <form class="d-flex">
+                   <a href="emBreveSLA.html"><h4 class="topMenu">Menu</h4></a>
+                </form>
+            </div>
+          </nav>
+            <div class="container pgCAD">
+              <div class="row" style="margin-top:35px">
+                    <div class="col-2 imgestudante">
+                         <img src="imagem/logo-estudante.jpg" alt="Aluno" width="150" height="125">
+                    </div>
+                    <div class="col-10"> 
+                           <div class="row" style="font-size:25px">
+                              Nome Completo do aluno 
+                           </div>
+                           <div class="row" style="margin-top:5px;font-size:25px">
+                             <div class="col-1" style="width:140px;margin-left:-11px">RM <span>73546</span></div>
+                             -
+                             <div class="col-1">INF3BM</div>
+
+                           </div>
+                           <div class="row" style="margin-top:5px;font-size:25px;width:140px">Grupo 3</div>
+                    </div>          
+              </div> 
+              <div class="row" style="margin:40px 0px 40px 0px"> 
+                   <h1 style="font-size:50px"> Projetos</h1>
+              </div>
+              <div class="row">
+                  <div class="flex-container">
+                      <div class="AddProj" onClick="AbreModal()">
+                          <i class="bi bi-plus-lg"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"><path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"/></svg></i>
+                      </div>
+                      <div class="ProjCriado" onClick="AbreProjCriado()">
+                        P
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+    </body>
+</html>
+
+
+
+<script>
+  function AbreModal(){
+    alert('Vou abrir nao amigo, é nois TMJ')
+  }
+   function AbreProjCriado(){
+    alert('Não tem nada aqui nao parça')
+  }
+
+</script>
