@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+     <meta charset="UTF-8">
     <title>Login de Aluno</title>
    <!-- link Css -->
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
@@ -50,7 +51,7 @@
               <div id="espacoLogin" class="espacoLogin">
                 <div class="row " style="text-align:center;margin-top:20px">          
                     <div class="col-12 linhaLogProf">
-                       <input class="form-control-lg inputCad1" type="text" placeholder="Nome">
+                       <input class="form-control-lg inputCad1" type="text" id="NomeLogin" name="NomeLogin" placeholder="Nome">
                     </div>
                 </div>
               <br>
@@ -82,7 +83,7 @@
                <div class="col-2">
                 </div>
                   <div class="col-5" >
-                      <a href="PGProjetosAluno.html"><button type="button" class="btn btn-lg btn-danger btn-position-LogProf" >Proximo <i class="bi bi-arrow-left-circle"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg></i></button></a>  
+                     <button type="button" class="btn btn-lg btn-danger btn-position-LogProf" onclick="ValidaLoginAluno()" >Proximo <i class="bi bi-arrow-left-circle"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg></i></button>  
                   </div>
               </div>
             </div> 
