@@ -137,8 +137,7 @@ function ValidaLoginAluno(){
         }else {
           alert('ATENÇÃO! Faltou preencha os seguintes campos' + msg);
         }
-
-	
-
 	}
-  
+function EsqueciSenha(){
+	alert('No momento não é possivel iniciar o processo para recuperar a senha!\n Tente novamente mais tarde!')
+}
