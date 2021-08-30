@@ -118,3 +118,27 @@ function ValidaProj(){
 
   // FIM  VALIDAÇÂO para todos os campos do projeto
   // ==========================
+
+function ValidaLoginAluno(){
+	  		 let NomeLogin = document.getElementById('NomeLogin').value;
+	  		 let SenhaAluno = document.getElementById('SenhaAluno').value;
+	  		 let msg = '';
+
+
+  		if( NomeLogin == ''){
+          msg = msg + '\n -- Nome'
+        }
+        if( SenhaAluno == ''){
+          msg = msg + '\n -- Senha'
+        }
+        if(msg == ''){
+          // alert('OK')
+          window.location.href = 'PGProjetosAluno.html'
+        }else {
+          alert('ATENÇÃO! Faltou preencha os seguintes campos' + msg);
+        }
+
+	
+
+	}
+  
