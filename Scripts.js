@@ -1,4 +1,4 @@
-// Validaçao para cadastrar aluno pg1
+// VALIDAÇÂO para cadastrar aluno pg1
  function ValidaProxPg(){
     
     var NomeAluno = document.getElementById('NomeAluno').value;
@@ -30,7 +30,9 @@
 			alert('ATENÇÃO! Faltou preencha os seguintes campos' + msg);
 		}
 	}
-// Validaçao para cadastrar aluno pg2
+// FIM VALIDAÇÂO
+
+// VALIDAÇÂO para cadastrar aluno pg2
 	function ValidaConcluiCad(){
     var EmailAluno = document.getElementById('EmailAluno').value;
 	var SenhaAluno = document.getElementById('SenhaAluno').value;
@@ -67,3 +69,52 @@ function senhaigual(){
 
 	}
 }
+//FIM VALIDAÇÂO para cadastrar aluno pg2
+// =======================
+
+//	VALIDAÇÂO para todos os campos do projeto
+//	Modal da pagina "PGProjetoAluno" 
+function ValidaProj(){
+           let NomeProjeto = document.getElementById('NomeProjeto').value;
+           let NumProj = document.getElementById('NumProj').value;
+           let RmProf = document.getElementById('RmProf').value;
+           let SlcTema = document.getElementById('SlcTema').value;
+           let SlcTipo = document.getElementById('SlcTipo').value;
+           let LocalApres = document.getElementById('LocalApres').value;
+           let inputTextArea = document.getElementById('inputTextArea').value;
+           let msg = '';
+
+        if( NomeProjeto == ''){
+          msg = msg + '\n -- Nome do Projeto'
+        }
+        if( NumProj == ''){
+          msg = msg + '\n -- Número do projeto'
+        }
+        if( RmProf == ''){
+          msg = msg + '\n -- Rm Professor Coordenador'
+        }
+        if( SlcTema == 0){
+          msg = msg + '\n -- Tema'
+        }
+        if( SlcTipo == 0){
+          msg = msg + '\n -- Tipo'
+        }
+        if( LocalApres == ''){
+          msg = msg + '\n -- Local da Apresentação'
+        }
+        if( inputTextArea == ''){
+          msg = msg + '\n -- Descriçao breve do projeto'
+        }
+        if(msg == ''){
+          // alert('OK')
+          window.location.href = 'CadastroAlunoPart2.html'
+        }else {
+          alert('ATENÇÃO! Faltou preencha os seguintes campos' + msg);
+        }
+  }
+   function AbreProjCriado(){
+    alert('Não tem nada aqui nao parça')
+  }
+
+  // FIM  VALIDAÇÂO para todos os campos do projeto
+  // ==========================

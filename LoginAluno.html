@@ -1,9 +1,18 @@
+<!-- 
+  A pagina está da seguinte maneira
+   - links no geral
+   -codigo html
+   -Scripts que nao funcionam no scripts.js
+ -->
 <!DOCTYPE html>
 <html>
   <head>
     <title>Login de Aluno</title>
    <!-- link Css -->
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
+  <!-- link  para o script JS -->
+    <script type="text/javascript" src="Scripts.js"></script>
+
   <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <!-- Link do google fonts Varela Round-->
@@ -12,18 +21,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   <!-- icone de favorito -->
     <link rel="shortcut icon" type="image/x-icon" href="imagem/favicon-32x32.ico">
-  </head>
 
+<!-- Link para jquery do olha da senha funcionar -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+   
+
+  </head>
   <!-- bg-light   borda branca em volta do top menu -->
     <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><h2 class="titulologo">SLAXP</h2></a>
-     
-        <div>     
-          <form class="d-flex">
-             <a href="emBreveSLA.html"><h4 class="topMenu">Menu</h4></a>
-          </form>
-      </div>
+          <div>     
+            <form class="d-flex">
+               <a href="emBreveSLA.html"><h4 class="topMenu">Menu</h4></a>
+            </form>
+        </div>
     </nav>
     <body class="bodyPrincipal">
       <div class="container CadAluno">
@@ -43,30 +56,33 @@
               <br>
               <!--------------------------->
                <div class="row" style="text-align:center;">
-                  <div class="col-12 linhaLogProf">
-                     <input class="form-control-lg inputCad1" type="password" placeholder="Senha">
+                  <div class="col-11 "> 
+                    <input type="password" class="form-control-lg inputCad1"  style=" width:350px !important;margin-left:-10px" placeholder="Senha" id="SenhaAluno" name="SenhaAluno">
+
                   </div>
-              </div>
+                   <div class="col-1"> 
+                      <div class="olhoQTDVe" style="margin-top:10px;margin-left:-35px"><i class="bi bi-eye-fill" id="OlhoFechado" ><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg></i>
+                      </div>
+                  </div>
+               </div>
               <br>
               <!--------------------------->
                <div class="row ">
                   <div class="col-12 linhaEsqueci">
-                     <a href="" class="esqueciProf">Esqueci Minha senha</a>
+                     <a href="" class="esqueciAluno" onclick="EsqueciSenha">Esqueci Minha senha</a>
                   </div>
-               
-              </div>
+               </div>
               <br>
               <!--------------------------->
-             <br>
-       
+              <br>
               <div class="row" style="text-align:center;">
                <div class="col-5" >
-                    <a href="LoginAlunoProf.html"><button type="button" class="btn btn-lg btn-danger btn-position-LogProf" ><i class="bi bi-arrow-left-circle"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/></svg></i>  Anterior</button></a>  
+                      <a href="LoginAlunoProf.html"><button type="button" class="btn btn-lg btn-danger btn-position-LogProf" ><i class="bi bi-arrow-left-circle"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/></svg></i>  Anterior</button></a>  
                   </div>
                <div class="col-2">
-                  </div>
+                </div>
                   <div class="col-5" >
-                    <a href="PGProjetosAluno.html"><button type="button" class="btn btn-lg btn-danger btn-position-LogProf" >Proximo <i class="bi bi-arrow-left-circle"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg></i></button></a>  
+                      <a href="PGProjetosAluno.html"><button type="button" class="btn btn-lg btn-danger btn-position-LogProf" >Proximo <i class="bi bi-arrow-left-circle"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg></i></button></a>  
                   </div>
               </div>
             </div> 
@@ -74,3 +90,28 @@
       </div> 
     </body>
 </html>
+
+
+ <!-- Jquery para o olho que ve a senha funcionar -->
+        <!-- Fica na pagina pq nao funciona na pagina do script -->
+ <script type="text/javascript">
+
+        var senha = $('#SenhaAluno');
+        var olho= $("#OlhoFechado");
+
+        olho.mousedown(function() {
+          senha.attr("type", "text");
+        });
+
+        olho.mouseup(function() {
+          senha.attr("type", "password");
+        });
+        // para evitar o problema de arrastar a imagem e a senha continuar exposta, 
+        //citada pelo nosso amigo nos comentários
+        $( "#OlhoFechado" ).mouseout(function() { 
+          $("#SenhaAluno").attr("type", "password");
+        });
+
+
+  </script>
+

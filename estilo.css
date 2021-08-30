@@ -1,12 +1,18 @@
 /*icones  https://icons.getbootstrap.com/  */
+
+
+
+
 :root{
 	/*Roxo*/ --CorTema : #320133;
 	/*branco*/--Branco:#ffffff;
 	/*Roxo claro*/--CorLetRoxo:#b67fb7;
+	/*Fundo do input*/--CorFundoModalInput:#d0d1d6;
 	/*Fonte PG-BotaoHome*/--Fonte-BotaoHome: 'Varela Round', sans-serif;
 	/*Fonte PG-subsobre*/--Fonte-Sobre: 'Big Shoulders Display', cursive;;
 	/*Fonte PG-paradescri*/--Fonte-descri:'Khula', sans-serif;
 	/*Fonte PG-EmBrevePg*/--fonte-EmBreve: 'Fugaz One', cursive;
+
 	}
 /*-----------------------------------*/
 /*NO GERAL*/
@@ -52,6 +58,14 @@ p{
 	opacity:0.7;
 	width:170px;
 	margin-left:120px
+}
+.btn-Cad{
+	opacity:0.7;
+	margin-top:1px
+}
+.linhaEsqueci{
+	text-align: left;
+	margin-top:-20px !important
 }
 /*-----------------------------------*/
 /*PAGINA iNDEX*/
@@ -212,10 +226,6 @@ p{
 	margin: auto;
 	top: 0; left: 0; bottom: 0; right: 0;
 }
-.linhaEsqueci{
-	text-align: left;
-	margin-top:-20px !important
-}
 /*-----------------------------------*/
 /*Pagina do Login Aluno */
 #espacoLogin{
@@ -229,10 +239,6 @@ p{
 	background-image:url("imagem/logo-estudante.jpg");
 	background-repeat: no-repeat, repeat;
 	background-position: center;
-}
-.linhaEsqueci{
-	text-align: left;
-	margin-top:-20px !important
 }
 /*-----------------------------------*/
 /*PGProjetosAluno */
@@ -255,33 +261,48 @@ p{
 .flex-container > div.ProjCriado {
   background-color: #444;/* cor do quadrado*/
   margin: 10px;
-  padding: 11px /*altura*/ 55px /*lado*/;
+  padding: 11px /*<-altura*/ 55px /*<-lado*/;
   font-size: 80px;
   height:160px;
   width: 160px;
 }
 /*fim parte do projeto*/
-/*Modal dos projetos*/
+/*Modal dos projetos*/ 
 .inputCadProj{
 	opacity:0.7;
 	width:400px;
 	margin-top:2%;
 	border:none;
-	background-color: #d0d1d6;
-
+	background-color: var(--CorFundoModalInput);
+}
+.inputCadProjNum{
+	opacity:0.7;
+	width:190px;
+	margin-top:2%;
+	margin-left:5%;
+	border:none;
+	background-color: var(--CorFundoModalInput);
 }
 .inputSelect{
-	margin-top:2%;
+	margin-top:4%;
 	opacity:0.7;
 	border:none;
-	background-color: #d0d1d6;
+	background-color: var(--CorFundoModalInput);
 }
-.inputText{
+.inputTextArea{
 	border:none;
-	background-color: #d0d1d6;
+	background-color: var(--CorFundoModalInput);
+
 }
-
-
+/*Pg normal*/
+.NomeAlunoProj{
+	font-size:25px
+}
+.LinhaIDAlunoProj{
+	margin-top:5px;
+	font-size:25px;
+	width:180px;
+}
 
 
 
