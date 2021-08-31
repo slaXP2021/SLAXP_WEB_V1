@@ -1,0 +1,176 @@
+<!-- 
+  A pagina está da seguinte maneira
+   - links no geral
+   - codigo html
+   - Modal
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto do aluno</title>
+
+<!-- link  para o script JS -->
+  <script type="text/javascript" src="Scripts.js"></script>
+<!-- link Css -->
+  <link rel="stylesheet" type="text/css" href="estilo.css"/>
+<!-- Link Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<!-- Link do google fonts Varela Round-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<!-- icone de favorito -->
+  <link rel="shortcut icon" type="image/x-icon" href="imagem/favicon-32x32.ico">
+<!-- Links para modal funcionar-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+
+
+
+</head>
+      <body class="bodyPrincipal">
+        <!-- bg-light   borda branca em volta do top menu -->
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><h2 class="titulologo">SLAXP</h2></a>
+           
+              <div>     
+                <form class="d-flex">
+                   <a href="emBreveSLA.html"><h4 class="topMenu">Menu</h4></a>
+                </form>
+            </div>
+          </nav>
+            <div class="container pgCAD">
+              <div class="row" style="margin-top:35px">
+                    <div class="col-2 imgestudante">
+                         <img src="imagem/logo-professor.jpg" alt="Aluno" width="150" height="125">
+                    </div>
+                    <div class="col-10"> 
+                           <div class="row NomeAlunoProj" >
+                              Nome Completo do Professor
+                           </div>
+                           <div class="row LinhaIDAlunoProj" style="">
+                             <div class="col-2" style="width:140px;margin-left:-11px">RM <span>72852</span></div>
+                           </div>
+                           <div class="row NomeAlunoProj">Matemática</div>
+                    </div>          
+              </div> 
+              <div class="row" style="margin:40px 0px 40px 0px"> 
+                   <h1 style="font-size:50px"> Projetos</h1>
+              </div>
+              <div class="row">
+                <div class="col-9">
+                  <div class="flex-container">
+                      <div class="ProjCriadoProf" data-bs-toggle="modal" data-bs-target="#MostraProj">
+                        P1
+                      </div>
+                      <div class="ProjCriadoProf" data-bs-toggle="modal" data-bs-target="#MostraProj">
+                        P2
+                      </div>
+                      <div class="ProjCriadoProf" data-bs-toggle="modal" data-bs-target="#MostraProj">
+                        P3
+                      </div>
+                      <div class="MostraProj" onclick="NaoMostra()">
+                          <i class="bi bi-plus-lg"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"><path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"/></svg></i>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-3" style="margin-top:50px;align-items: center;">
+                      <div class="row" style="">
+                          <div class="col-1">
+                              <input type="checkbox" name="" style="margin-top:8px;font-size: 50px">
+                          </div>
+                          <div class="col-9" style="font-size: 20px">
+                            Aprovado(0)
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-1">
+                              <input type="checkbox" name="chkReprovado" style="margin-top:8px;font-size: 20px">
+                          </div>
+                          <div class="col-9" style="font-size: 20px">
+                            Reprovado(0)
+                          </div>
+                    </div>
+                      <div class="row">
+                        <div class="col-1">
+                              <input type="checkbox" name="chkDevolucao" value="Devolução" style="margin-top:8px;font-size: 50px">
+                          </div>
+                          <div class="col-9" style="font-size: 20px">
+                            Devolução(0)
+                          </div>
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+ <!-- Modal -->
+       <div class="modal fade" id="MostraProj" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+          <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable" >
+            <div class="modal-content ContentModal" style="border-color: #8f98a5;border-width: 10px;background-color:#efeaee">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color:#be5472;font-size:25px;margin-left: 85px">Avaliação de projetos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="color:black">
+                  <div class="container">
+                     <div class="row" style="">
+                    <div class="col-5 ProjModal" style="background-color: #444;/* cor do quadrado*/margin: 10px;padding: 11px /*<-altura*/ 40px /*<-lado*/;font-size: 80px;height:160px;width: 160px;color: white">
+                       P? 
+                    </div>
+                    <div class="col-6"> 
+                           <div class="row NomeAlunoProj" >
+                              Grupo 4 - EDF3AT
+                           </div>
+                           <div class="row LinhaIDAlunoProj" style="">
+                             Homofobia
+                           </div>
+                           <div class="row NomeAlunoProj">
+                                
+                                  Tema:A homofobia é crime
+                           
+                         </div>
+                      </div>          
+                </div> 
+
+                  <div class="row" style="margin-top:10px;margin-bottom: 10px;text-align: justify;">
+                    <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma</p>
+                  </div>
+
+
+                <div class="row" style="margin-top:10px;margin-bottom: 10px">
+                  <div class="col-4">
+                     <input type="radio" id="rdoDecisao" name="rdoDecisao" value="Aprovado">
+                     Aprovado
+                  </div>
+                  <div class="col-4">
+                     <input type="radio" id="rdoDecisao" name="rdoDecisao" value="Reprovado">
+                     Reprovado
+                  </div>
+                  <div class="col-4">
+                     <input type="radio" id="rdoDecisao" name="rdoDecisao" value="Devolver">
+                     Devolver
+                  </div>
+                </div> 
+
+                      <div class="row" style="text-align:center;margin-top:8px">
+                            <div class="col-12">
+                              <textarea cols="30" rows="3" class="form-control inputTextArea" id="inputTextArea" name="inputTextArea" style="resize:none;" placeholder="Descriçao breve do projeto" ></textarea>
+                            </div>
+                              
+                        </div>
+                 </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" class="btnEnviaProj" style="color:#be5472;background-color:#d0d1d6;border:none" onclick="verificaVolta()">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+                <!-- Fim Modal -->
+      </body>
+</html>

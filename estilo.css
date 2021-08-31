@@ -19,10 +19,7 @@
 a:link {
   	text-decoration:none;
 }
-p{
- 	font-family: var(--Fonte-BotaoHome);
- 	font-size: 24px
-}
+
 .topMenu {
 	margin-right:10%;
 	margin-top:5%;
@@ -211,12 +208,16 @@ p{
 	margin-top: 28px;
 	margin-left: 380px;
 	color:var(--Branco);
+	font-size: 24px;
+	font-family: var(--Fonte-BotaoHome);
 	
 }
 .txtAlunoLOG{
 	margin-top: 28px;
 	margin-left:50px;
 	color:var(--Branco);
+	font-size: 24px;
+	font-family: var(--Fonte-BotaoHome);
 }
 /*-----------------------------------*/
 /*Pagina do Login Professor */
@@ -304,10 +305,32 @@ p{
 	width:180px;
 }
 
+/*PGProjetosProf */
 
-
-
-
+/*parte do projetos*/
+.flex-container {
+  display: flex;
+  /*background-color: DodgerBlue;*/
+}
+/*formataçao do botao para cadastrar o projeto*/
+.flex-container > div.MostraProj {
+  background-color: var(--CorTema);/* cor do quadrado*/
+  margin: 10px;
+  padding: 11px /*altura*/ 29px /*lado*/ ;
+  font-size: 80px;
+  height:160px;
+  width: 160px;
+}
+/*Formataçao para os demais projetos criados*/
+.flex-container > div.ProjCriadoProf {
+  background-color: #444;/* cor do quadrado*/
+  margin: 10px;
+  padding: 11px /*<-altura*/ 40px /*<-lado*/;
+  font-size: 80px;
+  height:160px;
+  width: 160px;
+}
+/*fim parte do projeto*/
 
 
 
