@@ -1,12 +1,23 @@
+function EsqueciSenha(){
+	alert('No momento não é possivel iniciar o processo para recuperar a senha!\n Tente novamente mais tarde!')
+}
+
+function NaoMostra(){
+	alert('No momento nao é possivel adicionar projetos, volte mais tarde')
+}
+function AbreProjCriado(){
+    alert('Não é possivel possivel abrir este projeto no momento\n por favor tente mais tarde')
+}
+
 // VALIDAÇÂO para cadastrar aluno pg1
  function ValidaProxPg(){
     
-    var NomeAluno = document.getElementById('NomeAluno').value;
-    var RmAluno = document.getElementById('RmAluno').value;
-    var NumAluno = document.getElementById('NumAluno').value;
-	var TurmaAluno = document.getElementById('TurmaAluno').value; 
-	var GrupoAluno = document.getElementById('GrupoAluno').value;
-	var msg = '';
+  let NomeAluno = document.getElementById('NomeAluno').value;
+  let RmAluno = document.getElementById('RmAluno').value;
+  let NumAluno = document.getElementById('NumAluno').value;
+	let TurmaAluno = document.getElementById('TurmaAluno').value; 
+	let GrupoAluno = document.getElementById('GrupoAluno').value;
+	let msg = '';
 
 		if( NomeAluno == ''){
 			msg = msg + '\n -- Aluno'
@@ -34,10 +45,10 @@
 
 // VALIDAÇÂO para cadastrar aluno pg2
 	function ValidaConcluiCad(){
-    var EmailAluno = document.getElementById('EmailAluno').value;
-	var SenhaAluno = document.getElementById('SenhaAluno').value;
-	var RecSenhaAluno = document.getElementById('RecSenhaAluno').value;
-    var msg = '';
+  let EmailAluno = document.getElementById('EmailAluno').value;
+	let SenhaAluno = document.getElementById('SenhaAluno').value;
+	let RecSenhaAluno = document.getElementById('RecSenhaAluno').value;
+  let msg = '';
 
     	if( EmailAluno == ''){
 			msg = msg + '\n -- Email'
@@ -46,7 +57,7 @@
 			msg = msg + '\n -- Senha'
 		}
 		if( RecSenhaAluno == ''){
-			msg = msg + '\n -- Corfirme a senha '
+			msg = msg + '\n -- Conrfirme a senha '
 		}
 		if(msg == ''){
 			senhaigual();
@@ -57,8 +68,8 @@
     }
 
 function senhaigual(){
-	var SenhaAluno = document.getElementById('SenhaAluno').value;
-	var RecSenhaAluno = document.getElementById('RecSenhaAluno').value;
+	let SenhaAluno = document.getElementById('SenhaAluno').value;
+	let RecSenhaAluno = document.getElementById('RecSenhaAluno').value;
 
 	if( SenhaAluno === RecSenhaAluno){
 		alert('Dados OK')
@@ -112,9 +123,7 @@ function ValidaProj(){
           alert('ATENÇÃO! Faltou preencha os seguintes campos' + msg);
         }
   }
-   function AbreProjCriado(){
-    alert('Não tem nada aqui nao parça')
-  }
+ 
 
   // FIM  VALIDAÇÂO para todos os campos do projeto
   // ==========================
@@ -138,6 +147,109 @@ function ValidaLoginAluno(){
           alert('ATENÇÃO! Faltou preencha os seguintes campos' + msg);
         }
 	}
-function EsqueciSenha(){
-	alert('No momento não é possivel iniciar o processo para recuperar a senha!\n Tente novamente mais tarde!')
+
+
+
+// pagina de validaçao do professor
+function ValidaProf(){
+	let NomeProf = document.getElementById('NomeProf').value;
+	let RmProf = document.getElementById('RmProf').value;
+	let Disciplina = document.getElementById('Disciplina').value;
+	let msg = "";
+
+	if( NomeProf == ''){
+          msg = msg + '\n -- Nome do professor'
+        }
+    if( RmProf == ''){
+          msg = msg + '\n -- Rm do professor'
+        }
+    if( Disciplina == ''){
+          msg = msg + '\n -- Disciplina'
+        }
+    if(msg == ''){
+          // alert('OK')
+          window.location.href = 'CadastroProfPart2.html'
+    }else {
+          alert('ATENÇÃO! Faltou preencha os seguintes campos' + msg);
+    }
 }
+
+function ValidaProfSegunda(){
+	let EmailProf = document.getElementById('EmailProf').value;
+	let SenhaProf = document.getElementById('SenhaProf').value;
+	let ConfirSenha = document.getElementById('ConfirmaSenhaProf').value;
+	let msg = "";
+
+	if( EmailProf == ''){
+          msg = msg + '\n -- Email'
+        }
+    if( SenhaProf == ''){
+          msg = msg + '\n -- Senha'
+        }
+    if( ConfirSenha == ''){
+          msg = msg + '\n -- Conrfirme a senha '
+        }
+    if(msg == ''){
+          // alert('OK')
+          senhaigualProf();
+    }else {
+          alert('ATENÇÃO! Faltou preencha os seguintes campos' + msg);
+    }
+}
+
+function senhaigualProf(){
+	let SenhaProf = document.getElementById('SenhaProf').value;
+	let ConfirSenha = document.getElementById('ConfirmaSenhaProf').value;
+
+	if( SenhaProf === ConfirSenha){
+		alert('Dados OK')
+		window.location.href = 'LoginProf.html'
+	}else{
+		alert('As senhas são diferentes')
+}
+}
+function ValidaLoginProf(){
+
+	  		 let NomeLoginProf = document.getElementById('NomeLoginProf').value;
+	  		 let SenhaProf = document.getElementById('SenhaProf').value;
+	  		 let msg = '';
+
+
+  		if( NomeLoginProf == ''){
+          msg = msg + '\n -- Nome'
+        }
+        if( SenhaProf == ''){
+          msg = msg + '\n -- Senha'
+        }
+        if(msg == ''){
+          // alert('OK')
+          window.location.href = 'PGProjetosProf.html'
+        }else {
+          alert('ATENÇÃO! Faltou preencha os seguintes campos' + msg);
+        }
+	}
+
+
+function verificaVolta(){
+	let	rdoDecisao = document.querySelector('input[name=rdoDecisao]:checked').value;
+	let inputTextArea = document.getElementById('inputTextArea').value;
+	let msg = '';
+
+
+
+  		if( rdoDecisao.value == ''){
+          msg = msg + '\n -- decisão se o projeto esta Ok'
+        }
+        if( inputTextArea == ''){
+          msg = msg + '\n -- Descriçao da devolutiva'
+        }
+        if(msg == ''){
+          alert('Projeto Enviado')
+          // window.location.href = 'PGProjetosProf.html'
+        }else {
+          alert('ATENÇÃO! Faltou preencha os seguintes campos' + msg);
+        }
+}
+
+
+

@@ -7,23 +7,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <meta charset="UTF-8">
-    <title>Login de Aluno</title>
-   <!-- link Css -->
-    <link rel="stylesheet" type="text/css" href="estilo.css"/>
-  <!-- link  para o script JS -->
-    <script type="text/javascript" src="Scripts.js"></script>
-
-  <!-- Link Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <!-- Link do google fonts Varela Round-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-  <!-- icone de favorito -->
-    <link rel="shortcut icon" type="image/x-icon" href="imagem/favicon-32x32.ico">
+ <meta charset="UTF-8">
+<!-- link  para o script JS -->
+  <script type="text/javascript" src="Scripts.js"></script>
+<!-- link Css -->
+  <link rel="stylesheet" type="text/css" href="estilo.css"/>
+<!-- Link Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<!-- Link do google fonts Varela Round-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<!-- icone de favorito -->
+  <link rel="shortcut icon" type="image/x-icon" href="imagem/favicon-32x32.ico">
+<!-- Links para modal funcionar-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 
 <!-- Link para jquery do olha da senha funcionar -->
+<!-- Link que não tem em outras paginas  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 
    
@@ -83,7 +87,7 @@
                <div class="col-2">
                 </div>
                   <div class="col-5" >
-                     <button type="button" class="btn btn-lg btn-danger btn-position-LogProf" onclick="ValidaLoginAluno()" >Proximo <i class="bi bi-arrow-left-circle"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg></i></button>  
+                     <button type="button" class="btn btn-lg btn-danger btn-position-LogProf" onclick="ValidaLoginProf()" >Proximo <i class="bi bi-arrow-left-circle"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg></i></button>  
                   </div>
               </div>
             </div> 
@@ -94,7 +98,7 @@
 
 
  <!-- Jquery para o olho que ve a senha funcionar -->
-        <!-- Fica na pagina pq nao funciona na pagina do script -->
+ <!-- Fica na pagina pq nao funciona na pagina do script -->
  <script type="text/javascript">
 
         var senha = $('#SenhaProf');
