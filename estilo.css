@@ -1,8 +1,6 @@
 /*icones  https://icons.getbootstrap.com/  */
 
 
-
-
 :root{
 	/*Roxo*/ --CorTema : #320133;
 	/*branco*/--Branco:#ffffff;
@@ -130,6 +128,7 @@ a:link {
     color: var(--CorLetRoxo);
 }
 .paradescri {
+	font-size: 24px;
 	font-family: var(--Fonte-descri);
     color: var(--Branco);
 }
