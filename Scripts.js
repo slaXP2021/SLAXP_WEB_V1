@@ -210,12 +210,12 @@ function senhaigualProf(){
 }
 function ValidaLoginProf(){
 
-	  		 let NomeLoginProf = document.getElementById('NomeLoginProf').value;
+	  		 let EmailLoginProf = document.getElementById('EmailLoginProf').value;
 	  		 let SenhaProf = document.getElementById('SenhaProf').value;
 	  		 let msg = '';
 
 
-  		if( NomeLoginProf == ''){
+  		if( EmailLoginProf == ''){
           msg = msg + '\n -- Nome'
         }
         if( SenhaProf == ''){
