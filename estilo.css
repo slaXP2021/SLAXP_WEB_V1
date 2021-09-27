@@ -33,17 +33,15 @@ a:link {
 body{
 	color:var(--Branco);
 	background-color:var(--CorTema);
-}
-.bodyPrincipal{
-	color:var(--Branco);
-	background-color:var(--CorTema); 
 	background-image: url("imagem/Img_de_fundo.png");
 	background-repeat: no-repeat, repeat;
 	background-position: right;
 	background-size: 700px;
 	margin-bottom: 60px;
-	/*width:50px;*/
-	/*padding-right: 50px*/
+}
+.bodyPrincipal{
+	color:var(--Branco);
+	background-color:var(--CorTema); 
 }
 .imagemFundo{
 
