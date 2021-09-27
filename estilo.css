@@ -30,21 +30,30 @@ a:link {
 .d-flex{
 	margin-right: 40%;
 }
-body{
+
+.bodyPrincipal{
 	color:var(--Branco);
-	background-color:var(--CorTema);
+	background-color:var(--CorTema); 
+}
+.bodyPrincipalCImg{
+	color:var(--Branco);
+	background-color:var(--CorTema); 
 	background-image: url("imagem/Img_de_fundo.png");
 	background-repeat: no-repeat, repeat;
 	background-position: right;
 	background-size: 700px;
 	margin-bottom: 60px;
+	/*width:50px;*/
+	/*padding-right: 50px*/
 }
-.bodyPrincipal{
+.bodyPrincipalCadastra{
 	color:var(--Branco);
 	background-color:var(--CorTema); 
-}
-.imagemFundo{
-
+	/*background-image: url("imagem/Img_de_fundo_cadastra2.png");
+	background-repeat: no-repeat, repeat;
+	background-position: center;
+	background-size: 190px; 
+	padding-top: -60px*/
 }
 .container-fluid{
 	background-color:var(--CorTema);
