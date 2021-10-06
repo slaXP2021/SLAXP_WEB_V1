@@ -38,7 +38,7 @@ a:link {
 .bodyPrincipalCImg{
 	color:var(--Branco);
 	background-color:var(--CorTema); 
-	background-image: url("imagem/Img_de_fundo.png");
+	background-image: url("imagem/Img_de_fundo_cadastra_c_filtro.png");
 	background-repeat: no-repeat, repeat;
 	background-position: right;
 	background-size: 700px;
